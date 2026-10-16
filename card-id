@@ -150,7 +150,7 @@
         <!-- Foto Profil Lingkaran -->
         <div class="profile-container">
             <!-- Ganti src dengan file foto formal Anda -->
-            <img class="avatar" src="ahmad-faishal.jpg" alt="Ahmad Faishal">
+            <img class="avatar" src="foto-faishal.jpg" alt="Ahmad Faishal">
         </div>
 
         <!-- Nama dan Kelas -->
