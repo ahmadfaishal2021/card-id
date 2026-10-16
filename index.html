@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Faishal - X ELIND 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial Black', 'Impact', sans-serif;
+        }
+
+        body {
+            /* Warna latar belakang kuning cerah penuh sesuai gambar */
+            background-color: #FFEA36;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 0;
+        }
+
+        .phone-wrapper {
+            background-color: #FFEA36;
+            width: 100%;
+            max-width: 412px;
+            min-height: 100vh;
+            position: relative;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Logo Sekolah di Pojok Kiri Atas */
+        .school-logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 75px;
+            height: auto;
+        }
+
+        /* Avatar Profil Lingkaran Latar Hijau */
+        .profile-container {
+            margin-top: 60px;
+            margin-bottom: 25px;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #84cc16; /* Warna hijau terang pada latar foto */
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Bagian Teks Identitas */
+        .info-container {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .name {
+            font-size: 1.6rem;
+            color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .class-name {
+            font-size: 1.5rem;
+            color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Komponen Barcode / QR Code Tengah */
+        .qr-container {
+            background-color: #ffffff;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+            display: inline-block;
+        }
+
+        .qr-image {
+            width: 180px;
+            height: 180px;
+            display: block;
+        }
+
+        /* Baris Tombol Media Sosial (Horizontal di Bawah) */
+        .social-row {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            width: 100%;
+            margin-top: auto; /* Mendorong sosmed ke bagian bawah halaman */
+            padding-bottom: 20px;
+        }
+
+        .social-icon {
+            width: 55px;
+            height: 55px;
+            border-radius: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+
+        /* Warna & Gaya Ikon Sosmed Mengikuti Gambar Resmi */
+        .icon-youtube {
+            background-color: #FF0000;
+        }
+
+        .icon-tiktok {
+            background-color: #000000;
+        }
+
+        .icon-instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        /* SVG Ikon Putih di Dalam Tombol */
+        .social-icon svg {
+            width: 30px;
+            height: 30px;
+            fill: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="phone-wrapper">
+        <!-- Logo Sekolah -->
+        <img class="school-logo" src="logo-smk.png" alt="Logo SMK">
+
+        <!-- Foto Profil Lingkaran -->
+        <div class="profile-container">
+            <img class="avatar" src="foto-faishal.jpg" alt="Ahmad Faishal">
+        </div>
+
+        <!-- Nama dan Kelas -->
+        <div class="info-container">
+            <h1 class="name">AHMAD FAISHAL</h1>
+            <h2 class="class-name">X ELIND 3</h2>
+        </div>
+
+        <!-- Kode Barcode / QRIS -->
+        <div class="qr-container">
+            <img class="qr-image" src="qris.jpg" alt="QR Code">
+        </div>
+
+        <!-- Baris Media Sosial Horizontal dengan Link Asli Anda -->
+        <div class="social-row">
+            <!-- Tombol YouTube Anda -->
+            <a href="https://youtube.com/@faisajaa10?si=BnoZrhQtzFnpGiuv" target="_blank" class="social-icon icon-youtube" title="YouTube">
+                <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            
+            <!-- Tombol TikTok Anda -->
+            <a href="https://www.tiktok.com/@faisajaaa10?_r=1&_t=ZS-9AbRGw7Srp8" target="_blank" class="social-icon icon-tiktok" title="TikTok">
+                <svg viewBox="0 0 24 24"><path d="M12.525.01c1.306-.022 2.616-.012 3.921-.012.353 2.339 1.794 4.14 3.9 5.155V9.14c-1.611-.015-3.045-.515-4.146-1.656v6.924c.009 4.254-3.232 7.591-7.42 7.585-4.214-.006-7.534-3.344-7.513-7.567.022-4.188 3.42-7.514 7.616-7.464v3.967c-2.1-.05-3.756 1.488-3.69 3.585.068 2.148 1.733 3.635 3.731 3.58 2.062-.056 3.551-1.637 3.551-3.697V0z"/></svg>
+            </a>
+
+            <!-- Tombol Instagram Anda -->
+            <a href="https://www.instagram.com/justfaisss?rpxt=eGxicThqZ21qd3d5" target="_blank" class="social-icon icon-instagram" title="Instagram">
+                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
